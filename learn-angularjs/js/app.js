@@ -26,4 +26,12 @@
 		};
 
 	});
+
+	app.directive ('formReview',function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'templates/form-review.html',
+		}
+	});
+
 })();
