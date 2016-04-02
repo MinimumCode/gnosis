@@ -16,4 +16,14 @@
 			return this.tab === tab;
 		};
 	});
+
+	app.controller('ReviewController',function(){
+		this.review = {};
+
+		this.addProductReview = function( prod ) {
+			prod.reviews.push( this.review );
+			this.review = {};
+		};
+
+	});
 })();
